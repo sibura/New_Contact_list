@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+	<title>Contacts</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
+
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="js/bootstrap.min.js" rel="stylesheet">
+
+
+</head>
+<body ng-app="">
+  <!-- <h2>Phone Book</h2>
+  <button type="button" class="btn btn-info btn-lg pull-right" id="add" data-toggle="modal" data-target="#myModal">Add new</button>
+  <hr> -->
+
+
+  <!-- <div ng-init="friends = [{name:'John', phone:'555-1276'},
+                         {name:'Mary', phone:'800-BIG-MARY'},
+                         {name:'Mike', phone:'555-4321'},
+                         {name:'Adam', phone:'555-5678'},
+                         {name:'Julie', phone:'555-8765'},
+                         {name:'Juliette', phone:'555-5678'}]"></div> -->
+
+                      
+                         <label>Search: <input ng-model="searchText" placeholder="Search"></label>
+                         <table id="searchTextResults" class="table table-striped">
+
+                           <tr ng-repeat="Contacts in Contacts:index | filter:searchText">
+                            
+                           <tbody>
+                             <tr ng-repeat="Contacts in Contacts:index | filter:searchText">
+                               <td>{{friend.name}}</td>
+                               <td>{{friend.phone}}</td>
+                              
+                             </tr>
+
+                           </tbody>
+                         </table>
+</body>
+</html>
